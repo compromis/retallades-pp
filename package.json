@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt": "^3.3.3"
+  },
+  "dependencies": {
+    "@compromis/blobby": "^1.1.9",
+    "gsap": "npm:@gsap/shockingly@^3.11.5",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "vue-marquee-text-component": "^2.0.1"
+  }
+}
