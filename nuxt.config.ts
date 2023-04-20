@@ -41,9 +41,10 @@ export default defineNuxtConfig({
   ],
 
   i18n: {
+    differentDomains: (process.env.NODE_ENV === 'production'),
     locales: [
-      { code: 'val', file: 'val.js', name: 'Valencià', isCatchallLocale: true },
-      { code: 'cas', file: 'cas.js', name: 'Castellano' }
+      { code: 'val', file: 'val.js', name: 'Valencià', domain: 'retalladespp.com', isCatchallLocale: true },
+      { code: 'cas', file: 'cas.js', name: 'Castellano', domain: 'recortespp.com' }
     ],
     lazy: true,
     langDir: 'lang',
