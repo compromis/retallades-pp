@@ -3,17 +3,8 @@ import BNav from '@compromis/blobby/components/nav/BNav.vue'
 import BNavItem from '@compromis/blobby/components/nav/BNavItem.vue'
 import BFooter from '@compromis/blobby/components/footer/BFooter.vue'
 
-const { $ScrollSmoother } = useNuxtApp()
 const route = useRoute()
 const { locale } = useI18n()
-
-onMounted(() => {
-  $ScrollSmoother.create({
-    smooth: 0.5,
-    effects: true,
-    normalizeScroll: true
-  })
-})
 </script>
 
 <template>

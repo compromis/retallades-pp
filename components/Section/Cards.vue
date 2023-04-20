@@ -8,14 +8,14 @@
         {{ $t('card.specialists') }}
 
         <template #emoji>
-          <img class="emoji thinking" data-lag="0.1" src="~/assets/images/emojis/thinking-face.png" alt="" />
+          <img class="emoji thinking" src="~/assets/images/emojis/thinking-face.png" alt="" />
         </template>
       </AnimatedCard>
       <AnimatedCard :number="-2000" id="Card3">
         {{ $t('card.nurses') }}
 
         <template #emoji>
-          <img class="emoji thermometer" data-lag="0.1" src="~/assets/images/emojis/face-with-thermometer.png" alt="" />
+          <img class="emoji thermometer" src="~/assets/images/emojis/face-with-thermometer.png" alt="" />
         </template>
       </AnimatedCard>
       <AnimatedCard :number="-5000" id="Card4">
@@ -31,14 +31,14 @@
         {{ $t('card.residence') }}
 
         <template #emoji>
-          <img class="emoji confounded" data-lag="0.1" src="~/assets/images/emojis/confounded-face.png" alt="" />
+          <img class="emoji confounded" src="~/assets/images/emojis/confounded-face.png" alt="" />
         </template>
       </AnimatedCard>
       <AnimatedCard :number="-10" id="Card8">
         {{ $t('card.daycare') }}
 
         <template #emoji>
-          <img class="emoji eyebrows" data-lag="0.1" src="~/assets/images/emojis/face-with-raised-eyebrow.png" alt="" />
+          <img class="emoji eyebrows" src="~/assets/images/emojis/face-with-raised-eyebrow.png" alt="" />
         </template>
       </AnimatedCard>
       <AnimatedCard text="No gratuïts" id="Card9">
@@ -48,17 +48,17 @@
         {{ $t('card.rent') }}
 
         <template #emoji>
-          <img class="emoji steam" data-lag="0.1" src="~/assets/images/emojis/face-with-steam-from-nose.png" alt="" />
+          <img class="emoji steam" src="~/assets/images/emojis/face-with-steam-from-nose.png" alt="" />
         </template>
       </AnimatedCard>
       <AnimatedCard :number="-6000" id="Card11">
         {{ $t('card.grants') }}
 
         <template #emoji>
-          <img class="emoji expletive" data-lag="0.1" src="~/assets/images/emojis/face-with-symbols-on-mouth.png" alt="" />
+          <img class="emoji expletive" src="~/assets/images/emojis/face-with-symbols-on-mouth.png" alt="" />
         </template>
       </AnimatedCard>
-      <AnimatedCard :number="-35000" even id="Card12">
+      <AnimatedCard :number="-35000" id="Card12">
         {{ $t('card.dependence') }}
       </AnimatedCard>
     </div>
