@@ -35,7 +35,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <article :class="['card', {'padded': text || number}]" :id="id">
+  <article :class="['card', { 'padded': text || number }]" :id="id">
     <div class="card-inner">
       <span class="card-number" v-if="number || text">
         <span v-if="number">
