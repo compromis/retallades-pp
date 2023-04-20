@@ -6,7 +6,7 @@ const { locale } = useI18n()
   <section class="intro">
     <div class="intro-marquee">
       <ClientOnly>
-        <MarqueeText :duration="55">
+        <MarqueeText :duration="35">
           <span class="intro-number">
             1.749.426.180 €
             <div class="logo-pp first"><img src="~/assets/images/logos/pp.svg" alt="" /></div>

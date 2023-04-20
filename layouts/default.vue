@@ -48,6 +48,8 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
+@import "~/assets/scss/fonts";
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.03em;
 }
