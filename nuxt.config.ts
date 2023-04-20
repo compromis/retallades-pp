@@ -36,6 +36,20 @@ export default defineNuxtConfig({
 
   css: ['@compromis/blobby/scss/blobby.scss'],
 
+  modules: [
+    '@nuxtjs/i18n'
+  ],
+
+  i18n: {
+    locales: [
+      { code: 'val', file: 'val.js', name: 'Valencià', isCatchallLocale: true },
+      { code: 'cas', file: 'cas.js', name: 'Castellano' }
+    ],
+    lazy: true,
+    langDir: 'lang',
+    defaultLocale: 'val'
+  },
+
   vite: {
     css: {
       preprocessorOptions: {

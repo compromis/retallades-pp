@@ -27,7 +27,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: '#' + props.id + ' .card-inner',
       start: 'top bottom',
-      end: "+=1000",
+      end: "+=800",
       scrub: true,
     },
   })
@@ -38,7 +38,10 @@ onMounted(() => {
   <article :class="['card', {'padded': text || number}]" :id="id">
     <div class="card-inner">
       <span class="card-number" v-if="number || text">
-        <AnimatedNumber v-if="number" :from="0" :to="number" :trigger="id" />
+        <span v-if="number">
+          <AnimatedNumber :from="0" :to="number" :trigger="id" />
+          <img src="~/assets/images/icons/triangle.svg" class="stonks" alt="" />
+        </span>
         <span v-else>{{ text }}</span>
       </span>
       
@@ -75,16 +78,27 @@ onMounted(() => {
     border-radius: .75rem;
     padding: .25rem 1rem;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 4.5vw, 2.5rem);
     position: absolute;
     top: 0;
     right: 1.5rem;
     transform: translateY(-50%);
-    letter-spacing: -.03em;
+    
+    & > span {
+      letter-spacing: -.03em;
+      display: flex;
+      align-items: center;
+    }
+
+    .stonks {
+      height: .85em;
+      transform: rotate(180deg);
+      margin-left: .25em;
+    }
   }
 
   &-text {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
     letter-spacing: -.03em;
     line-height: 1.1;
   }

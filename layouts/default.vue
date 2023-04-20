@@ -5,6 +5,7 @@ import BFooter from '@compromis/blobby/components/footer/BFooter.vue'
 
 const { $ScrollSmoother } = useNuxtApp()
 const route = useRoute()
+const { locale } = useI18n()
 
 onMounted(() => {
   $ScrollSmoother.create({
@@ -19,16 +20,16 @@ onMounted(() => {
   <div>
     <b-nav no-spacer collapse-at="lg">
       <template #logo-append>
-        <nuxt-link to="/">Retalls PP</nuxt-link>
+        <nuxt-link to="/">Retallades PP</nuxt-link>
       </template>
       <template #basic-nav>
         <li class="nav-menu-item d-md-none">
-          <nuxt-link to="/" v-if="route.name === 'cas'">VAL</nuxt-link>
-          <nuxt-link to="/" v-else>CAS</nuxt-link>
+          <nuxt-link :to="switchLocalePath('val')" v-if="locale === 'cas'">VAL</nuxt-link>
+          <nuxt-link :to="switchLocalePath('cas')" v-else>CAS</nuxt-link>
         </li>
         <li class="nav-menu-item d-none d-md-flex">
-          <nuxt-link to="/" v-if="route.name === 'cas'">Valencià</nuxt-link>
-          <nuxt-link to="/" v-else>Castellano</nuxt-link>
+          <nuxt-link :to="switchLocalePath('val')" v-if="locale === 'cas'">Valencià</nuxt-link>
+          <nuxt-link :to="switchLocalePath('cas')" v-else>Castellano</nuxt-link>
         </li>
       </template>
     </b-nav>

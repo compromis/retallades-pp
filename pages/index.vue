@@ -4,7 +4,7 @@
       <SectionNumber />
       <SectionCards />
     </div>
-    <div class="background yellow">
+    <div class="background orange">
       <SectionProposal />
     </div>
   </main>
@@ -12,11 +12,11 @@
 
 <style lang="scss" scoped>
 .background {
-  font-family: Roobert, sans-serif;
+  font-family: $campaign-font;
   background-color: $blue;
 
-  &.yellow {
-    background-color: $yellow;
+  &.orange {
+    background-color: $orange;
   }
 }
 </style>

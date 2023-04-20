@@ -1,15 +1,24 @@
+<script setup>
+const { locale } = useI18n()
+</script>
+
 <template>
   <section class="proposal">
     <div class="container">
-      <div class="proposal-text">
-        <p>No és moment per a tornar a les retallades de serveis públics.<br>És el moment de <strong><u>més polítiques per a les persones</u></strong>.</p>
+      <div class="proposal-text" v-if="locale === 'cas'">
+        <p>No és moment per a tornar a les retallades de serveis públics.</p>
+        <p>És el moment de <strong><u>més polítiques per a les persones</u></strong>.</p>
+      </div>
+      <div class="proposal-text" v-else>
+        <p>No és moment per a tornar a les retallades de serveis públics.</p>
+        <p>És el moment de <strong><u>més polítiques per a les persones</u></strong>.</p>
       </div>
 
       <div class="cards">
         <AnimatedCard id="Proposal1">
           <div class="card-proposal">
-            <h2>Consolidar la reforma fiscal del Botànic</h2>
-            <p>Els impostos més baixos per a qui menys té, i una major aportació dels rics i rendes altes.</p>
+            <h2>{{ $t('proposal.first.title') }}</h2>
+            <p>{{ $t('proposal.first.text') }}</p>
             <a href="/" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/levante.svg" alt="Levante" />
               <h3>Las rentas bajas valencianas son las que menos IRPF pagan de España</h3>
@@ -18,8 +27,8 @@
         </AnimatedCard>
         <AnimatedCard id="Proposal2">
           <div class="card-proposal">
-            <h2>Enfortir els serveis públics</h2>
-            <p>Invertir més recursos en sanitat, educació, serveis socials, vivenda i en totes les polítiques per a les persones.</p>
+            <h2>{{ $t('proposal.second.title') }}</h2>
+            <p>{{ $t('proposal.second.text') }}</p>
             <a href="/" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/eldiario.svg" alt="eldiario.es" />
               <h3>La Generalitat Valenciana lidera la recuperación de la inversión en políticas sociales tras los recortes de la última dècada</h3>
@@ -28,8 +37,8 @@
         </AnimatedCard>
         <AnimatedCard id="Proposal3">
           <div class="card-proposal">
-            <h2>Aconseguir un finançament just per invertit en tot el que importa</h2>
-            <p>Perquè encara ens queda molt per fer!</p>
+            <h2>{{ $t('proposal.third.title') }}</h2>
+            <p>{{ $t('proposal.third.text') }}</p>
             <a href="/" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/valenciaplaza.svg" alt="Valencia Plaza" />
               <h3>Baldoví promete reactivar la vía judicial para reclamar una financiación autonómica justa</h3>
@@ -51,10 +60,10 @@
     color: $white;
     max-width: 50ch;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
     margin: 0 auto;
     line-height: 1.1;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
   }
 
   strong {
@@ -62,7 +71,7 @@
   }
 
   u {
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: .15em;
   }
 }
 
@@ -77,12 +86,13 @@
   gap: 2rem;
 
   h2 {
-    font-size: 2.75rem;
+    font-size: clamp(2rem, 2vw, 2.75rem);
   }
 
   p {
-    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 1.5vw, 1.75rem);
     padding-right: 2rem;
+    margin: 0;
   }
 
   .card-snippet {
@@ -108,6 +118,22 @@
 
     &:hover {
       opacity: .75;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .proposal {
+    padding: 0 0 5rem;
+  }
+
+  .card-proposal {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .card-snippet {
+      margin-top: 0;
+      border-radius: 0 0 var(--card-radius) var(--card-radius);
     }
   }
 }
