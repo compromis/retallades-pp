@@ -28,6 +28,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: '#' + props.id + ' .card-inner',
       start: 'top bottom',
+      toggleActions: "restart none none reverse"
     },
   })
 })

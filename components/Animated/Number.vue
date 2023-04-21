@@ -30,7 +30,8 @@ onMounted(() => {
     ease: 'Power1.easeIn',
     scrollTrigger: {
       trigger: '#' + props.trigger + ' .animated-number',
-      start: 'top bottom'
+      start: 'top bottom',
+      toggleActions: "restart none none reverse"
     },
     onUpdate: function() {
       this.targets()[0].innerHTML = numberFormat(Math.ceil(this.targets()[0].textContent))
