@@ -23,11 +23,12 @@ const { locale } = useI18n()
     </div>
     <div class="intro-text" v-if="locale === 'cas'">
       <p>
-        Este es el <strong><u>recorte</u></strong> al Presupuesto que ha anunciado el
+        Este es el <strong><u>recorte</u></strong> que ha anunciado el
         <span class="pp-wrapper">
           <img class="logo-pp" src="~/assets/images/logos/pp.svg" alt="" />
           <strong><u>Partido Popular</u></strong>
         </span>
+        con una reforma fiscal para favorecer a los ricos 
         si gana las elecciones.
       </p>
       <p>Es mucho dinero, sí. Pero a veces cuesta hacerse una idea de lo que <strong><u>puede suponer para nuestras vidas</u></strong>.</p>
@@ -35,11 +36,11 @@ const { locale } = useI18n()
     </div>
     <div class="intro-text" v-else>
       <p>
-        Esta és la <strong><u>retallada</u></strong> del Pressupost que ha anunciat el
+        Esta és la <strong><u>retallada</u></strong> que ha anunciat el
         <span class="pp-wrapper">
           <img class="logo-pp" src="~/assets/images/logos/pp.svg" alt="" />
           <strong><u>Partit Popular</u></strong>
-        </span>
+        </span> amb una reforma fiscal per a afavorir els rics
         en cas que guanye les eleccions.
       </p>
       <p>Son molts diners, sí. Però de vegades costa fer-se una idea del que <strong><u>pot suposar per a les nostres vides</u></strong>.</p>
@@ -75,7 +76,7 @@ const { locale } = useI18n()
     .logo-pp {
       position: absolute;
       width: 5vw;
-      min-width: 50px;
+      min-width: 60px;
 
       &.first {
         bottom: 15%;
@@ -105,7 +106,7 @@ const { locale } = useI18n()
     .scissors {
       position: absolute;
       width: 5vw;
-      min-width: 50px;
+      min-width: 60px;
 
       &.first {
         top: 7%;

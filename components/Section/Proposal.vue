@@ -6,8 +6,8 @@ const { locale } = useI18n()
   <section class="proposal">
     <div class="container">
       <div class="proposal-text" v-if="locale === 'cas'">
-        <p>No és moment per a tornar a les retallades de serveis públics.</p>
-        <p>És el moment de <strong><u>més polítiques per a les persones</u></strong>.</p>
+        <p>No es el momento de volver a los recortes en servicios públicos.</p>
+        <p>Es el momento de <strong><u>más políticas para las personas</u></strong>.</p>
       </div>
       <div class="proposal-text" v-else>
         <p>No és moment per a tornar a les retallades de serveis públics.</p>

@@ -15,11 +15,6 @@ export default {
     notfree: "No gratuïts",
   },
   proposal: {
-    intro: {
-      text1: "No és moment per a tornar a les retallades de serveis públics.",
-      text2: "És el moment de",
-      strong: "més polítiques per a les persones",
-    },
     first: {
       title: "Consolidar la reforma fiscal del Botànic",
       text: "Els impostos més baixos per a qui menys té, i una major aportació dels rics i rendes altes.",
