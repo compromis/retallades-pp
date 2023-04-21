@@ -19,7 +19,7 @@ const { locale } = useI18n()
           <div class="card-proposal">
             <h2>{{ $t('proposal.first.title') }}</h2>
             <p>{{ $t('proposal.first.text') }}</p>
-            <a href="/" target="_blank" rel="noopener" class="card-snippet">
+            <a href="https://www.levante-emv.com/comunitat-valenciana/2023/03/15/rentas-bajas-valencianas-son-irpf-84674563.html" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/levante.svg" alt="Levante" />
               <h3>Las rentas bajas valencianas son las que menos IRPF pagan de España</h3>
             </a>
@@ -29,7 +29,7 @@ const { locale } = useI18n()
           <div class="card-proposal">
             <h2>{{ $t('proposal.second.title') }}</h2>
             <p>{{ $t('proposal.second.text') }}</p>
-            <a href="/" target="_blank" rel="noopener" class="card-snippet">
+            <a href="https://www.eldiario.es/comunitat-valenciana/generalitat-valenciana-lidera-recuperacion-inversion-politicas-sociales-recortes-ultima-decada_1_6211139.html" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/eldiario.svg" alt="eldiario.es" />
               <h3>La Generalitat Valenciana lidera la recuperación de la inversión en políticas sociales tras los recortes de la última dècada</h3>
             </a>
@@ -39,7 +39,7 @@ const { locale } = useI18n()
           <div class="card-proposal">
             <h2>{{ $t('proposal.third.title') }}</h2>
             <p>{{ $t('proposal.third.text') }}</p>
-            <a href="/" target="_blank" rel="noopener" class="card-snippet">
+            <a href="https://valenciaplaza.com/baldovi-promete-ir-a-los-tribunales-para-reclamar-la-financiacion-autonomica" target="_blank" rel="noopener" class="card-snippet">
               <img src="~/assets/images/logos/valenciaplaza.svg" alt="Valencia Plaza" />
               <h3>Baldoví promete reactivar la vía judicial para reclamar una financiación autonómica justa</h3>
             </a>
