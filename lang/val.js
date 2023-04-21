@@ -1,9 +1,9 @@
 export default {
   card: {
-    doctors: "Metgesses de família",
+    doctors: "Metges/ses de família",
     specialists: "Especialistes",
-    nurses: "Infermers",
-    teachers: "Mestres i professors",
+    nurses: "Infermers/es",
+    teachers: "Mestres i professors/es",
     schools: "Escoles i instituts",
     clinics: "Centres de salut",
     residence: "Residències de majors",
