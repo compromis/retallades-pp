@@ -59,19 +59,20 @@ const { locale } = useI18n()
   justify-content: center;
 
   &-marquee {
-    height: clamp(15rem, 30vw, 40rem);
+    --text-size: clamp(16rem, 30vw, 40rem);
+    height: var(--text-size);
     margin-bottom: 4vh;
+    transform: translateY(4rem);
   }
 
   &-number {
     position: relative;
     display: inline-block;
-    font-size: clamp(15rem, 30vw, 40rem);
+    font-size: var(--text-size);
     font-weight: 900;
     letter-spacing: -.02em;
     margin-left: 50vw;
     line-height: 1;
-    transform: translateY(2rem);
 
     .logo-pp {
       position: absolute;
@@ -172,6 +173,8 @@ const { locale } = useI18n()
 
     &-text {
       line-height: 1.25;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
 }

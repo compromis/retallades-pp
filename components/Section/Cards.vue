@@ -122,8 +122,8 @@
 @include media-breakpoint-down(md) {
   .cards {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 0 0 75px;
+    gap: 3rem;
+    padding: 4rem 0;
 
     .emoji {
       width: 75px;
@@ -134,18 +134,28 @@
       }
 
       &.thermometer {
-        bottom: -2.5rem;
-        left: 5rem;
+        bottom: 3.5rem;
+        right: 2rem;
+      }
+
+      &.confounded {
+        top: -17.5rem;
+        left: 2rem;
+      }
+    
+      &.eyebrows {
+        top: -2.5rem;
+        left: 30%;
       }
 
       &.steam {
-        top: -3rem;
+        top: -2.5rem;
         left: 3rem;
       }
 
       &.expletive {
         bottom: -1rem;
-        right: 3rem;
+        right: 2rem;
       }
     }
   }

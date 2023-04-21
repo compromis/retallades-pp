@@ -11,7 +11,7 @@ const { locale } = useI18n()
   <div>
     <b-nav no-spacer collapse-at="lg">
       <template #logo-append>
-        <nuxt-link to="/">Retallades PP</nuxt-link>
+        <nuxt-link to="/">{{ $t('campaign.title') }}</nuxt-link>
       </template>
       <template #basic-nav>
         <li class="nav-menu-item d-md-none">

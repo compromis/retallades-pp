@@ -78,7 +78,7 @@ onMounted(() => {
     border-radius: .75rem;
     padding: .25rem 1rem;
     font-weight: 900;
-    font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 4.25vw, 2.5rem);
     position: absolute;
     top: 0;
     right: 1.5rem;

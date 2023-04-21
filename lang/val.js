@@ -1,4 +1,7 @@
 export default {
+  campaign: {
+    title: "Retallades PP",
+  },
   card: {
     doctors: "Metges/ses de família",
     specialists: "Especialistes",
