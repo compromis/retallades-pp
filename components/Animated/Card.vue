@@ -24,11 +24,10 @@ onMounted(() => {
     y: 50,
     scale: 0.85,
     ease: 'Elastic.easeOut',
+    duration: 1.25,
     scrollTrigger: {
       trigger: '#' + props.id + ' .card-inner',
       start: 'top bottom',
-      end: "+=800",
-      scrub: true,
     },
   })
 })

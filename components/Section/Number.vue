@@ -8,7 +8,7 @@ const { locale } = useI18n()
       <ClientOnly>
         <MarqueeText :duration="35">
           <span class="intro-number">
-            1.749.426.180 €
+            1.750.000.000 €
             <div class="logo-pp first"><img src="~/assets/images/logos/pp.svg" alt="" /></div>
             <img class="logo-pp second" src="~/assets/images/logos/pp.svg" alt="" />
             <img class="logo-pp third" src="~/assets/images/logos/pp.svg" alt="" />
@@ -70,6 +70,7 @@ const { locale } = useI18n()
     letter-spacing: -.02em;
     margin-left: 50vw;
     line-height: 1;
+    transform: translateY(2rem);
 
     .logo-pp {
       position: absolute;
@@ -84,7 +85,7 @@ const { locale } = useI18n()
 
       &.second {
         bottom: 50%;
-        left: 31%;
+        left: 29%;
         transform: rotate(14deg);
       }
 
@@ -96,7 +97,7 @@ const { locale } = useI18n()
 
       &.fourth {
         bottom: 35%;
-        left: 85%;
+        left: 86%;
         transform: rotate(14deg);
       }
     }
@@ -107,14 +108,14 @@ const { locale } = useI18n()
       min-width: 50px;
 
       &.first {
-        top: 9%;
+        top: 7%;
         left: 12%;
         transform: rotate(-64deg);
       }
 
       &.second {
         bottom: 9%;
-        left: 41.5%;
+        left: 43.5%;
         transform: rotate(114deg);
       }
 
